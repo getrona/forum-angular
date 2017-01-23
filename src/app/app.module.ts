@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { NewPostingComponent } from './new-posting/new-posting.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ViewPostingsComponent } from './view-postings/view-postings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewPostingComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ViewPostingsComponent
   ],
   imports: [
     BrowserModule,

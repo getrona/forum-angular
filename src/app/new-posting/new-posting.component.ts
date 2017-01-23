@@ -13,4 +13,14 @@ export class NewPostingComponent implements OnInit {
   ngOnInit() {
   }
 
+  posting: Posting;
+
+  newPosting(title, price, description, author, imageUrl) {
+    if (imageUrl.length === 0) {
+      this.posting = new Posting(title, price, description, author);
+    } else {
+      this.posting = new Posting(title, price, description, author, imageUrl);
+    }
+    console.log(this.posting);
+  }
 }
