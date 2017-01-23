@@ -1,0 +1,30 @@
+<form>
+  <div class="row">
+    <div class="input-field col s12 m8">
+      <input class="validate" type="text" name="title" placeholder="Post Title" #title required>
+    </div>
+    <div class="input-field col s12 m4">
+      <input type="number" name="price" placeholder="Post Price" #price required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12 m12">
+      <input class="validate" type="text" name="description" placeholder="Post Description" #description required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12 m12">
+      <input class="validate" type="text" name="author" placeholder="Post Author" #author required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12 m12">
+      <input class="validate" type="text" name="author" placeholder="Image URL: http://www.example.com" #imageUrl required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button class="btn blue" name="submit" (click)="newPosting(title.value, price.value, description.value, author.value, imageUrl.value)">Submit Posting</button>
+    </div>
+  </div>
+</form>

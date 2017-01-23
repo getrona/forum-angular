@@ -9,11 +9,12 @@
         </div>
       </form>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a routerLink="add-new">New Posting</a></li>
+        <li><a routerLink="new-posting">New Posting</a></li>
         <!-- <li><a routerLink="search">Search</a></li> -->
       </ul>
       <a routerLink="" class="brand-logo center">Site Name Goes Here</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a routerLink="postings">View Postings</a></li>
         <li><a routerLink="about">About</a></li>
       </ul>
     </div>
@@ -21,8 +22,5 @@
 </div>
 
 <div class="container">
-  <h1>
-    {{title}}
-  </h1>
   <router-outlet></router-outlet>
 </div>

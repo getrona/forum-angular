@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Posting } from './posting.model';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  allPostings: Posting[] = [];
   searchFilter: string = '';
   clearSearch(): void {
     this.searchFilter = "";

@@ -5,10 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
+import { NewPostingComponent } from './new-posting/new-posting.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewPostingComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
