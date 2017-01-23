@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  searchFilter: string = 'Search';
+  searchFilter: string = '';
   clearSearch(): void {
     this.searchFilter = "";
   }
